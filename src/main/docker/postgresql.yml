@@ -1,0 +1,12 @@
+version: '2'
+services:
+    reporttest-postgresql:
+        container_name: reporttest-postgresql
+        image: postgres:9.5.1
+        # volumes:
+        #     - ~/volumes/jhipster/reporttest/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=reporttest
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
